@@ -24,10 +24,10 @@
               
               <option value="">Choose: </option>
               
-                <option value="travel">TRAVEL</option>
-                <option value="food">FOOD</option>
-                <option value="tech">TECH</option>
-                <option value="music">MUSIC</option>
+                <option value="0">TRAVEL</option>
+                <option value="1">FOOD</option>
+                <option value="2">TECH</option>
+                <option value="3">MUSIC</option>
               
               </select>
             </p>
@@ -42,10 +42,11 @@
 
 function getOption() {
   const textBox = document.getElementById("textbox")
-  console.log(textbox.value)
+  url = textbox.value
+  console.log(url)
 selectElement = document.querySelector('#choice');
-output = selectElement.value;
-console.log(output)
+value = selectElement.value;
+console.log(value)
 }
 
     </script>
