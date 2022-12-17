@@ -10,13 +10,19 @@
     
 </head>
 <body>
-    <div class="dropdown">
-        <input class="text-box" type="text" placeholder="Select on" readonly>
-        <div class="options">
-          <div onclick="show('HTML')">HTML</div>
-          <div onclick="show('CSS')">CSS</div>
-        </div>
-    </div>
+    <p>
+        <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </p>
+      
+    
+  
+    <button onclick="getOption()"> Check option </button>
+      
       <input type="text" placeholder="Enter Name" id = "textbox">
     <button id="btn">Save</button>
     <script src="script.js"></script>
