@@ -12,7 +12,7 @@ while (k != 0):
     url = input()
     i = cat_url_set.index(cat)
     cat_url_set[i+1].add(url)
-    k = k-1 
+    k = k-2
 print(cat_url_set)
 
 
