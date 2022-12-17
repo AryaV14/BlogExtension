@@ -1,0 +1,39 @@
+*{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+h2{
+    color: rgb(250, 224, 189);
+    font-family:'Ribeye Marrow', cursive;
+    text-align: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-content: normal;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 300px;
+    color: var(--gray900);
+    background-color: aqua;
+}
+.heading{
+    background-color:white;
+    /* padding: 10px;
+    margin: 50px; */
+    display: flex;
+    min-height:50px;
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    align-content: normal;
+    flex-wrap: nowrap;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
