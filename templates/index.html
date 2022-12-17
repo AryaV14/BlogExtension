@@ -16,13 +16,7 @@
         <div class="heading">
             <h2>Blog Reader</h2>
         </div>
-            <!-- <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">TRAVEL</a></li>
-              <li><a href="#">FOOD</a></li>
-              <li><a href="#">TECH</a></li>
-            </ul> -->
+           
           
          <p>
             
@@ -38,24 +32,17 @@
               </select>
             </p>
           
-          <button onclick="getOption()"> Check option </button>
+          
       
-      <input type="text" placeholder="Enter Name" id = "textbox">
-    <button id="btn">Save</button>
+      <input type="text" placeholder="Site name..." id = "textbox">
+      <button onclick="getOption()"> + </button>
     <script >
 
-const btn = document.getElementById("btn")
-btn.addEventListener("click", handleClick)
 
-// innerHTML
-function handleClick() {
-  const textBox = document.getElementById("textbox")
-  console.log(textbox.value)
- 
-
-}
 
 function getOption() {
+  const textBox = document.getElementById("textbox")
+  console.log(textbox.value)
 selectElement = document.querySelector('#choice');
 output = selectElement.value;
 console.log(output)
