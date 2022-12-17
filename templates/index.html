@@ -16,46 +16,53 @@
         <div class="heading">
             <h2>Blog Reader</h2>
         </div>
-           
+        <div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+        </div> 
+        <div class="first">
           
-         <p>
-
-          <form class="form-inline" method="POST" >
-
-            <select name="value" id="choice" data-toggle="dropdown">
-
-              
-              <option value="">Choose: </option>
-              
-                <option value="0">TRAVEL</option>
-                <option value="1">FOOD</option>
-                <option value="2">TECH</option>
-                <option value="3">MUSIC</option>
-              
-              </select>
-            </p>
-          
+          <p>
+            
+            <form class="form-inline" method="POST">
+              <div class="dropdown"> 
+                    <select name="value" id="choice" data-toggle="dropdown">
+                      
+                      <option  value="">Choose: </option>
+                      
+                        <option value="0">TRAVEL</option>
+                        <option value="1">FOOD</option>
+                        <option value="2">TECH</option>
+                        <option value="3">MUSIC</option>
+                      
+                      </select>
+                    </p> 
+                </div>  
+                <div class="url-inputter">
+                    <input name="url" type="text" placeholder="Site name..." id = "textbox">
+                </div>
+                <div class="plus-button">
+                    <button onclick="getOption()"> &#43;</button>
+                </div>
+                
+        </div>
+        
+          <script >
+  
+  
+  function getOption() {
+    const textBox = document.getElementById("textbox")
+    console.log(textbox.value)
+  selectElement = document.querySelector('#choice');
+  output = selectElement.value;
+  console.log(output)
+  }
+  
+      </script>
           
       
-      <input name="url" type="text" placeholder="Site url..." id = "textbox">
-
-      <button onclick="getOption()"> + </button>
-    <script >
-
-
-
-function getOption() {
-  const textBox = document.getElementById("textbox")
-  url = textbox.value
-  console.log(url)
-selectElement = document.querySelector('#choice');
-value = selectElement.value;
-console.log(value)
-}
-
-    </script>
-        
-    
-    
-</body>
-</html>
+      
+  </body>
+  </html>
