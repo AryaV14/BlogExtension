@@ -5,35 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog extension</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 </head>
 <body>
-    <div id="root">
         <div class="heading">
             <h2>Blog Reader</h2>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">TRAVEL</a></li>
-              <li><a href="#">FOOD</a></li>
-              <li><a href="#">TECH</a></li>
-            </ul>
-          </div>
-        <div class="main">
-            <div class="items-1 item"></div>
-            <div class="items-2 item"></div>
-            <div class="items-3 item"></div>
-            <div class="items-4 item"></div>
-            <div class="items-5 item"></div>
-        </div>
-    </div>
+           
+          
+         <p>
+          <form class="form-inline" method="POST" >
+
+            <select name="value" id="choice" data-toggle="dropdown">
+              
+              <option value="">Choose: </option>
+              
+                <option value="0">TRAVEL</option>
+                <option value="1">FOOD</option>
+                <option value="2">TECH</option>
+                <option value="3">MUSIC</option>
+              
+              </select>
+            </p>
+          
+          
+      
+      <input name="url" type="text" placeholder="Site url..." id = "textbox">
+      <button onclick="getOption()"> + </button>
+    <script >
+
+
+
+function getOption() {
+  const textBox = document.getElementById("textbox")
+  url = textbox.value
+  console.log(url)
+selectElement = document.querySelector('#choice');
+value = selectElement.value;
+console.log(value)
+}
+
+    </script>
+        
+    
     
 </body>
 </html>
