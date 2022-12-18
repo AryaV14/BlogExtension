@@ -1,6 +1,7 @@
 # BlogExtension- By Team Femmina
 INTRODUCTION:
-  Creating a simple extension that keeps track of a user's blogging activity.
+
+    Creating a simple extension that keeps track of a user's blogging activity.
   
 PROBLEMS TO RESOLVE:
 
@@ -30,7 +31,8 @@ FUTURE IDEAS:
     3.Detection of a blog's category.
   
 CONCLUSION:
-  A blog reader extension can help in mindful blogging by presenting data on a user's blogging activity and can increase productivity.
+
+    A blog reader extension can help in mindful blogging by presenting data on a user's blogging activity and can increase productivity.
  
  TEAM MEMBERS:
  
