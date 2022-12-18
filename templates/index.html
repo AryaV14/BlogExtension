@@ -19,7 +19,7 @@
         </div>
          
         <div>
-            <label class="switch">
+            <label class="switch" id="switchValue">
                 <input name="read" type="checkbox">
                 <span class="slider round"></span>
               </label>
@@ -31,7 +31,7 @@
               <div class="dropdown"> 
                     <select name="value" id="choice" data-toggle="dropdown">
                       
-                      <option  value="">Choose: </option>
+                      <option  value="100">Choose: </option>
                       
                         <option value="0">TRAVEL</option>
                         <option value="1">FOOD</option>
@@ -56,9 +56,13 @@
   function getOption() {
     const textBox = document.getElementById("textbox")
     console.log(textbox.value)
-  selectElement = document.querySelector('#choice');
-  output = selectElement.value;
-  console.log(output)
+
+    var isChecked=document.getElementById("switchValue").checked;
+    console.log(isChecked);
+
+    selectElement = document.querySelector('#choice');
+    output = selectElement.value;
+    console.log(output)
   }
   
       </script>
