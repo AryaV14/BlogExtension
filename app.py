@@ -28,6 +28,7 @@ def index():
             if read == 'on':
                 read=1
                 count_visit[value]= count_visit[value]+1
+                print("Visited blogs count:")
                 print(count_visit)
                 
             else :
@@ -35,12 +36,15 @@ def index():
             if url not in cat_url_set[value]:
                 cat_url_set[value].append(url)
                 total[value]=total[value]+1
+                print("Total blogs :")
                 print(total)
             
                 visited[value].append(read)
             i = cat_url_set[value].index(url)
             visited[value][i] = read
+            print("Urls")
             print(cat_url_set)
+            print("Visited")
             print(visited)
           
         else:
@@ -51,6 +55,7 @@ def index():
                     visited[i] = 1
 
         percent[value]= (count_visit[value]/total[value])*100
+        print("Percentage of completion:")
         print(percent)        
     return render_template('index.html')
        
