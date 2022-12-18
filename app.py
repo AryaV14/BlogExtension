@@ -6,7 +6,7 @@ count_visit = []                            ##no of completed blogs
 total = []                                  ##no of blogs added
 cat_url_set = []                            ##list of urls
 visited=[]                                  ##list of completed blogs
-percent=[]
+percent=[]                                  ##percentage of completion
 for _ in range(0,4):
     cat_url_set.append(list())
     visited.append(list())
