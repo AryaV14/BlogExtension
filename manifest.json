@@ -1,0 +1,11 @@
+{
+    "manifest_version" : 2,
+    "name" : "Blog Reader",
+    "version" : "1.0.0",
+    "description" : "keep track of your blogs",
+    "author":"Femmina",
+    "browser_action" : {
+
+        "default_popup" : "index.html"
+    }
+}
