@@ -2,10 +2,10 @@ from flask import Flask, render_template, request
 app=Flask(__name__)
 
 
-count_visit = []
-total = []
-cat_url_set = []
-visited=[]
+count_visit = []                            ##no of completed blogs
+total = []                                  ##no of blogs added
+cat_url_set = []                            ##list of urls
+visited=[]                                  ##list of completed blogs
 percent=[]
 for _ in range(0,4):
     cat_url_set.append(list())
