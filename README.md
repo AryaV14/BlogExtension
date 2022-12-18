@@ -17,7 +17,9 @@ SOLUTION:
     2.Being able to add URL of blog to bookmark it.
     3.Categorize blogs on basis of categories.
     4.Publish statistics on blogs user have read.
-    
+
+STACK:
+    Flask, Html,Css and Js 
 IMPACT:
 
     Tracking:Keeping a better track on user's blogging activity.
