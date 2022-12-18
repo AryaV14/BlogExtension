@@ -28,7 +28,7 @@
                     <span class="slider round"></span>
                   </label>
             </div>
-              <div class="textbox" id="text">
+              <div class="textbox" id="text" >
                 <p >Marked as Read</p>         
             </div>
               
@@ -51,7 +51,10 @@
                 </div>  
                 <div class="url-inputter">
                     <div class="inputter">
-                    <input name="url" type="text" placeholder="Site name..." id = "textbox">
+                    <input name="url" type="text"  id = "textbox"input type="url" 
+                    placeholder="https://example.com"
+                    pattern="https://.*" size="30"
+                    required>
                 </div>
                 <div class="plus-button">
                     <button onclick="getOption()"> &#43;</button>
@@ -66,7 +69,9 @@
   
   
   function getOption() {
+    document.getElementById("textbox").innerHTML = window.location.href;
     const textBox = document.getElementById("textbox")
+    
     console.log(textbox.value)
 
     var isChecked=document.getElementById("switchValue").checked;
