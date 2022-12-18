@@ -13,20 +13,21 @@
   </head>
 </head>
 <body>
+  <form class="form-inline" method="POST">
         <div class="heading">
             <h2>Blog Reader</h2>
         </div>
+         
         <div>
             <label class="switch">
-                <input type="checkbox">
+                <input name="read" type="checkbox">
                 <span class="slider round"></span>
               </label>
         </div> 
+
+
         <div class="first">
-          
           <p>
-            
-            <form class="form-inline" method="POST">
               <div class="dropdown"> 
                     <select name="value" id="choice" data-toggle="dropdown">
                       
@@ -46,9 +47,9 @@
                 <div class="plus-button">
                     <button onclick="getOption()"> &#43;</button>
                 </div>
-                
+              
         </div>
-        
+      </form>
           <script >
   
   
