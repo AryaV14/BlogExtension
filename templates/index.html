@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   </head>
 </head>
 <body>
@@ -28,7 +31,7 @@
                     <span class="slider round"></span>
                   </label>
             </div>
-              <div class="textbox" id="text" >
+              <div class="textbox" id="text">
                 <p >Marked as Read</p>         
             </div>
               
@@ -51,10 +54,9 @@
                 </div>  
                 <div class="url-inputter">
                     <div class="inputter">
-                    <input name="url" type="text"  id = "textbox"input type="url" 
-                    placeholder="https://example.com"
+                    <input name="url" type="text" placeholder="https://example.com"
                     pattern="https://.*" size="30"
-                    required>
+                    required id = "textbox">
                 </div>
                 <div class="plus-button">
                     <button onclick="getOption()"> &#43;</button>
@@ -63,13 +65,75 @@
               
         </div>
     </div>
-        
-      </form>
-          <script >
-  
+
+
+    <div id="container" style="width: 75%;">
+      <canvas id="canvas"></canvas>
+     </div>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    <script src="static/js/script.js"></script>
+    </form>
+
+    
+    <!-- <script>
+    
+    
+    var barChartData = {
+      labels: [
+       "TRAVEL","FOOD","TECH","MUSIC"
+      ],
+      datasets: [
+        {
+          label: "READ",
+          backgroundColor: "lightred",
+          borderColor: "black",
+          borderWidth: 1,
+          data: [6, 3, 4, 6]
+        },
+        {
+          label: "NOT READ",
+          backgroundColor: "white",
+          borderColor: "lightbrown",
+          borderWidth: 1,
+          data: [2, 3, 6, 5]
+        }
+      ]
+    };
+    
+    var chartOptions = {
+      responsive: true,
+      legend: {
+        position: "top"
+      },
+      title: {
+        display: true,
+        text: "CATEGORIES"
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+    
+    window.onload = function() {
+      var ctx = document.getElementById("canvas").getContext("2d");
+      window.myBar = new Chart(ctx, {
+        type: "bar",
+        data: barChartData,
+        options: chartOptions
+      });
+    };
+    
+
+        document.getElementById("textbox").innerHTML = "hi"
+        console.log(window.location.href)
   
   function getOption() {
-    document.getElementById("textbox").innerHTML = window.location.href;
+    
+    console.log(window.location.href)
     const textBox = document.getElementById("textbox")
     
     console.log(textbox.value)
@@ -81,6 +145,7 @@
     output = selectElement.value;
     console.log(output)
   }
+
   function myFunction() {
   var checkBox = document.getElementById("myCheck");
   var text = document.getElementById("text");
@@ -91,7 +156,8 @@
   }
 }
   
-      </script>
+  </script>-->
+          
           
       
       
