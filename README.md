@@ -20,6 +20,7 @@ SOLUTION:
 
 STACK:
     Flask, Html,Css and Js 
+    
 IMPACT:
 
     Tracking:Keeping a better track on user's blogging activity.
